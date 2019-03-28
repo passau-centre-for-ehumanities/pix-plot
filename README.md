@@ -1,6 +1,6 @@
 # PixPlot
 
-This repository is a fork of the original PixPlot created by the Yale DH lab. In our version, cluster visualisation via different colors is added. In order to use this, create the plot_data.json as usual and then add group information to each image and a global group_count. Afterwards, the json should look like that:
+This repository is a fork of the original PixPlot created by the Yale DH lab. In our version, cluster visualisation via different colors is added as well as a preview function which shows the orginal image after clicking on a thumbnail in the 3D window. In order to use this, create the plot_data.json as usual (instructions below) and then add group information to each image and a global group_count. Afterwards, the json should look like that:
 
 <pre>
     {"atlas_counts": {"64px": 15.0, "32px": 4.0}, 
@@ -12,6 +12,10 @@ This repository is a fork of the original PixPlot created by the Yale DH lab. In
      "clusters": [...]
      }
 </pre>
+
+For the preview function, either create a subdirectory called **full** in your PixPlot directory and copy the original images to this new folder, or create a symlink pointing to the original image directory:
+
+    ln -s /path/to/images/ full
 
 - - - -
 
